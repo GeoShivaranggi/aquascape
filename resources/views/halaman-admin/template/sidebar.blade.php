@@ -9,7 +9,7 @@
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.repair')}}" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Repair Aquascape</span></a></li>
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.konsultasi')}}" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span class="hide-menu">Konsultasi</span></a></li>
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.jenis')}}" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Jenis - Jenis Aquascape</span></a></li>
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="grid.html" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span class="hide-menu">Testimoni Aquascape</span></a></li>
+                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('admin.testimoni')}}" aria-expanded="false"><i class="mdi mdi-blur-linear"></i><span class="hide-menu">Testimoni Aquascape</span></a></li>
                 
             </ul>
         </nav>

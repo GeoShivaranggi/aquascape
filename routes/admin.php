@@ -17,3 +17,10 @@ Route::get('/jenisedit/{data}', 'Admin\AdminController@jenisedit')->name('jenise
 Route::patch('/jenisedit/{data}', 'Admin\AdminController@jenisupdate')->name('jenisupdate');
 Route::get('/deletejenis/{data}', 'Admin\AdminController@deletejenis')->name('deletejenis');
 
+
+Route::get('/testimoni', 'Admin\AdminController@testimoni')->name('testimoni');
+Route::post('/testimoni', 'Admin\AdminController@testimonipost')->name('testimonipost');
+Route::get('/testimoniedit/{data}', 'Admin\AdminController@testimoniedit')->name('testimoniedit');
+Route::patch('/testimoniedit/{data}', 'Admin\AdminController@testiupdate')->name('testiupdate');
+Route::get('/testimonidelete/{data}', 'Admin\AdminController@testimonidelete')->name('testimonidelete');
+

@@ -8,8 +8,8 @@ class Testimoni extends Model
 {
     protected $table = 'testimoni';
     protected $fillable = [
-        'user_id',
         'gambar',
+        'judul',
         'keterangan',
     ];
 }
