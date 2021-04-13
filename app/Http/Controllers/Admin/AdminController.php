@@ -43,7 +43,7 @@ class AdminController extends Controller
         [
             'gambar' => "required|image|mimes:jpg,png,jpeg,gif,svg|max:2048",
             'judul' => "required",
-            'keterangan' => "required|image|mimes:jpg,png,jpeg,gif,svg|max:2048",
+            'keterangan' => "required",
         ]);
 
         if ($request->hasFile('gambar')) {
