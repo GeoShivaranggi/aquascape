@@ -16,6 +16,12 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 
 Route::get('/', 'PagesController@index')->name('route');
+
+Auth::routes(['verify' => true]);
+
+
+Route::get('/home', 'PagesController@index')->name('home')->middleware('verified');
+
 Route::get('/request', 'PagesController@request')->name('request');
 Route::post('/request', 'PagesController@requestpost')->name('requestpost');
 
@@ -29,10 +35,8 @@ Route::post('/konsultasi', 'PagesController@konsultasipost')->name('konsultasipo
 Route::get('/jenis', 'PagesController@jenis')->name('jenis');
 Route::post('/jenis', 'PagesController@jenispost')->name('jenispost');
 
-Auth::routes();
+Route::get('/testimoni', 'PagesController@testimoni')->name('testimoni');
+Route::post('/testimoni', 'PagesController@testimonipost')->name('testimonipost');
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

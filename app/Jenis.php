@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jenis extends Model
 {
-    protected $table = 'Jenis';
-    protected $fillable = [];
+    protected $table = 'jenis';
+    protected $fillable = [
+        'gambar',
+        'judul',
+        'keterangan',
+    ];
 }
